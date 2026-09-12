@@ -1,5 +1,8 @@
 services:
 
+  # =========================
+  # HADOOP NAMENODE
+  # =========================
   namenode:
     image: bde2020/hadoop-namenode:2.0.0-hadoop3.2.1-java8
     container_name: namenode
@@ -19,6 +22,9 @@ services:
       - ./hadoop.env
 
 
+  # =========================
+  # HADOOP DATANODE
+  # =========================
   datanode:
     image: bde2020/hadoop-datanode:2.0.0-hadoop3.2.1-java8
     container_name: datanode
@@ -37,19 +43,51 @@ services:
       - ./hadoop.env
 
 
-volumes:
-  hadoop_namenode:
-  hadoop_datanode:
-
+  # =========================
+  # MAPREDUCE
+  # =========================
   mapreduce:
     build:
       context: ./mapreduce
       dockerfile: Dockerfile
+
     container_name: mapreduce
+
     depends_on:
       - namenode
       - datanode
+
     volumes:
       - ./mapreduce:/app
+
     stdin_open: true
     tty: true
+
+
+  # =========================
+  # MONGODB - T13
+  # =========================
+  mongodb:
+    image: mongo:7
+    container_name: olist-mongodb
+    restart: unless-stopped
+
+    ports:
+      - "27017:27017"
+
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: admin123
+      MONGO_INITDB_DATABASE: olist
+
+    volumes:
+      - mongodb_data:/data/db
+
+
+# =========================
+# PERSISTENT VOLUMES
+# =========================
+volumes:
+  hadoop_namenode:
+  hadoop_datanode:
+  mongodb_data:
