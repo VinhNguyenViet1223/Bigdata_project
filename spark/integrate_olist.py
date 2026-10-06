@@ -249,5 +249,22 @@ print(f"Missing customer information : {missing_customer}")
 print(f"Missing payment information  : {missing_payment}")
 print(f"Missing review information   : {missing_review}")
 
+# ============================================================
+# 10. WRITE INTEGRATED DATA
+# ============================================================
+
+OUTPUT_PATH = "/tmp/olist_integrated"
+
+print("\nWriting integrated data to Parquet:")
+print(OUTPUT_PATH)
+
+(
+    integrated_df
+    .write
+    .mode("overwrite")
+    .parquet(OUTPUT_PATH)
+)
+
+print("Integrated data written successfully.")
 
 spark.stop()
