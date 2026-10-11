@@ -1,0 +1,7 @@
+﻿total_delivered_orders	96470
+avg_delivery_days	12.56
+min_delivery_days	0.53
+max_delivery_days	209.63
+late_orders	7826
+on_time_orders	88644
+late_delivery_rate_pct	8.11%

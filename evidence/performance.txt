@@ -1,0 +1,27 @@
+================================================================================
+HADOOP MAPREDUCE EXECUTION BENCHMARK & PERFORMANCE METRICS
+================================================================================
+Cluster Environment:
+- Cluster Engine: Apache Hadoop 3.2.1
+- Java Runtime: OpenJDK 1.8.0_232 (64-Bit Server VM)
+- Python Runtime: Python 3.5.3 (Container) / Python 3.11.7 (Host)
+- HDFS Architecture: 1 NameNode, 1 DataNode
+- Storage Mode: Distributed File System (HDFS RPC hdfs://namenode:9000)
+- Benchmark Date: 2026-09-18
+================================================================================
+
+PERFORMANCE TABLE ACROSS 6 PRODUCTION MAPREDUCE JOBS:
+
+Job ID  Job Name                 Input Dataset         Input Size  Records In  Records Out  Runtime (s)  Status
+---------------------------------------------------------------------------------------------------------------
+Job 01  Order Statistics         olist_orders          17.65 MB        99,441            8        4.09s  SUCCESS
+Job 02  Revenue by Order         olist_order_items     15.44 MB       112,650       98,666        5.09s  SUCCESS
+Job 03  Category Multi-Join      items+prods+trans     17.74 MB       112,650           74        7.60s  SUCCESS
+Job 04  Seller Performance       olist_order_items     15.44 MB       112,650        3,095        4.06s  SUCCESS
+Job 05  Reviews Analysis         olist_order_reviews   14.45 MB        99,224            6        4.02s  SUCCESS
+Job 06  Delivery Logistics       olist_orders          17.65 MB        96,470            7        4.99s  SUCCESS
+---------------------------------------------------------------------------------------------------------------
+TOTAL BATCH PIPELINE RUNTIME: ~29.85 seconds
+TOTAL RECORDS PROCESSED: 633,085 records across all jobs
+ZERO RECORD DROPS ON VALID DATA.
+================================================================================

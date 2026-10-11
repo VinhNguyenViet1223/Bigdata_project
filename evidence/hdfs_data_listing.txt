@@ -1,0 +1,12 @@
+﻿Found 11 items
+-rw-r--r--   3 root  supergroup      8.6 M 2026-08-26 04:41 /data/olist/olist_customers_dataset.csv
+-rw-r--r--   3 root  supergroup     58.4 M 2026-08-26 04:41 /data/olist/olist_geolocation_dataset.csv
+-rw-r--r--   3 root  supergroup     14.7 M 2026-08-26 04:41 /data/olist/olist_order_items_dataset.csv
+-rw-r--r--   3 root  supergroup      5.5 M 2026-08-26 04:41 /data/olist/olist_order_payments_dataset.csv
+-rw-r--r--   3 root  supergroup     13.8 M 2026-08-26 04:41 /data/olist/olist_order_reviews_dataset.csv
+-rw-r--r--   3 root  supergroup     16.8 M 2026-08-26 04:41 /data/olist/olist_orders_dataset.csv
+-rw-r--r--   3 root  supergroup      2.3 M 2026-08-26 04:41 /data/olist/olist_products_dataset.csv
+-rw-r--r--   3 root  supergroup    170.6 K 2026-08-26 04:41 /data/olist/olist_sellers_dataset.csv
+drwxr-xr-x   - root  supergroup          0 2026-09-10 03:14 /data/olist/output
+drwxr-xr-x   - spark supergroup          0 2026-09-10 03:11 /data/olist/processed
+-rw-r--r--   3 root  supergroup      2.6 K 2026-08-26 04:41 /data/olist/product_category_name_translation.csv
