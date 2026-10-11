@@ -1,0 +1,42 @@
+﻿Configured Capacity: 1081101176832 (1006.85 GB)
+Present Capacity: 1013549367296 (943.94 GB)
+DFS Remaining: 1013394198528 (943.80 GB)
+DFS Used: 155168768 (147.98 MB)
+DFS Used%: 0.02%
+Replicated Blocks:
+	Under replicated blocks: 219
+	Blocks with corrupt replicas: 0
+	Missing blocks: 0
+	Missing blocks (with replication factor 1): 0
+	Low redundancy blocks with highest priority to recover: 219
+	Pending deletion blocks: 0
+Erasure Coded Block Groups: 
+	Low redundancy block groups: 0
+	Block groups with corrupt internal blocks: 0
+	Missing block groups: 0
+	Low redundancy blocks with highest priority to recover: 0
+	Pending deletion blocks: 0
+
+-------------------------------------------------
+Live datanodes (1):
+
+Name: 172.18.0.2:9866 (datanode.bigdata_project_default)
+Hostname: b527d7487478
+Decommission Status : Normal
+Configured Capacity: 1081101176832 (1006.85 GB)
+DFS Used: 155168768 (147.98 MB)
+Non DFS Used: 12559454208 (11.70 GB)
+DFS Remaining: 1013394198528 (943.80 GB)
+DFS Used%: 0.01%
+DFS Remaining%: 93.74%
+Configured Cache Capacity: 0 (0 B)
+Cache Used: 0 (0 B)
+Cache Remaining: 0 (0 B)
+Cache Used%: 100.00%
+Cache Remaining%: 0.00%
+Xceivers: 1
+Last contact: Thu Oct 08 17:24:27 UTC 2026
+Last Block Report: Thu Oct 08 16:49:09 UTC 2026
+Num of Blocks: 219
+
+
